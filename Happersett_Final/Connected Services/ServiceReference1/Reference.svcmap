@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dcbcc270-666b-42a0-a5d3-d8f626788e3c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51923/Happersett_product.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Happersett_product.wsdl" MetadataType="Wsdl" ID="d4c86ec4-9e76-40e9-a93e-763a757f775d" SourceId="1" SourceUrl="http://localhost:51923/Happersett_product.svc?wsdl" />
+    <MetadataFile FileName="Happersett_product.disco" MetadataType="Disco" ID="4f4b8c3e-3390-40f0-9031-ecfcce942903" SourceId="1" SourceUrl="http://localhost:51923/Happersett_product.svc?disco" />
+    <MetadataFile FileName="Happersett_product.xsd" MetadataType="Schema" ID="c1045572-6626-40c2-ac82-0c5ff536780a" SourceId="1" SourceUrl="http://localhost:51923/Happersett_product.svc?xsd=xsd0" />
+    <MetadataFile FileName="Happersett_product1.xsd" MetadataType="Schema" ID="eeda896a-18b3-435c-ac6f-5466c039a3e2" SourceId="1" SourceUrl="http://localhost:51923/Happersett_product.svc?xsd=xsd2" />
+    <MetadataFile FileName="Happersett_product2.xsd" MetadataType="Schema" ID="a33365aa-3939-4418-9a42-d8eab86a8f38" SourceId="1" SourceUrl="http://localhost:51923/Happersett_product.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

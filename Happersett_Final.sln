@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Happersett_Final", "Happersett_Final\Happersett_Final.csproj", "{8D07CEEE-8D0F-4E44-B3D2-7CED68994725}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A3EEE66-F213-46C0-9335-CAB0685AC127} = {4A3EEE66-F213-46C0-9335-CAB0685AC127}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Happersett_PartB", "Happersett_PartB\Happersett_PartB.csproj", "{4A3EEE66-F213-46C0-9335-CAB0685AC127}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{8D07CEEE-8D0F-4E44-B3D2-7CED68994725}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D07CEEE-8D0F-4E44-B3D2-7CED68994725}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D07CEEE-8D0F-4E44-B3D2-7CED68994725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A3EEE66-F213-46C0-9335-CAB0685AC127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A3EEE66-F213-46C0-9335-CAB0685AC127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A3EEE66-F213-46C0-9335-CAB0685AC127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A3EEE66-F213-46C0-9335-CAB0685AC127}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
