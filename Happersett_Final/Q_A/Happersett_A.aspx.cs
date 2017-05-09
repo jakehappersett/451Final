@@ -27,29 +27,8 @@ namespace Happersett_Final
                 Label1.Text = "no session";
             }
 
-            //Response.Cookies["productcount"].Expires = DateTime.Now.AddYears(1);
+            Response.Cookies["productcount"].Value = DataAccess.count("SELECT Count(ProductID) FROM Product");
 
-            //string _connectionString = WebConfigurationManager.ConnectionStrings["Final"].ConnectionString;
-
-            //SqlConnection con = new SqlConnection(_connectionString);
-
-            //SqlCommand cmd = new SqlCommand();
-            //cmd.CommandText = "SELECT ProductID FROM Product";
-            //cmd.Connection = con;
-
-            //using (con)
-            //{
-            //    int counter = 0;
-            //    con.Open();
-            //    SqlDataReader reader = cmd.ExecuteReader();
-            //    while (reader.Read())
-            //    {
-                   
-            //        counter++;
-            //        Response.Cookies["productcount"].Value = counter.ToString();
-            //    }
-            //}
-            
         }
     }
 }

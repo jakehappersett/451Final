@@ -27,5 +27,16 @@ namespace Happersett_Final
             cnn.Close();
             return dt;
         }
-    }
+
+        public static string count(string query)
+        {
+            SqlConnection cnn = new SqlConnection(myConnectionString);
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand(query, cnn);
+            int count = (int)cmd.ExecuteScalar();
+            return count.ToString();
+        }
+
+        
+}
 }

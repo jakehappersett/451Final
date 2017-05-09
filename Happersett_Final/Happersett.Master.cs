@@ -13,7 +13,7 @@ namespace Happersett_Final
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label00.Text = Response.Cookies["productcount"].ToString();
+            Label00.Text = Response.Cookies["productcount"].Value;
             Label1.Text = DateTime.Now.ToString();
         }
     }
