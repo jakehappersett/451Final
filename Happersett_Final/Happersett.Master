@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Happersett.Master.cs" Inherits="Happersett_Final.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <asp:Menu ID="Menu1" runat="server">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Q_A/Happersett_A.aspx" Text="Question A " Value="Question A "></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Q_B/QuestionB.aspx" Text="Question B" Value="Question B"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+
+                <br />
+                <asp:Label ID="Label000" runat="server" Text="number of products : "></asp:Label>
+                <asp:Label ID="Label00" runat="server"></asp:Label>
+                <br />
+            <hr />
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </form>
+    <div>
+        <hr />
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    </div>
+</body>
+</html>

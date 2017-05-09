@@ -11,7 +11,8 @@
         <div>
             <asp:GridView ID="g_prod" runat="server"></asp:GridView>
             <asp:Button ID="Button1" runat="server" Text="Add Item" OnClick="Button1_Click" />
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Happersett_A.aspx">back</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Q_A/Happersett_A.aspx">back</asp:HyperLink>
+       </div>
     </form>
 </body>
 </html>

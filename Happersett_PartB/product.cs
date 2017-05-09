@@ -16,5 +16,15 @@ namespace Happersett_PartB
         [DataMember]
         public string name { get; set; }
 
+        [DataMember]
+        public string description { get; set; }
+
+        [DataMember]
+        public string type { get; set; }
+
+        [DataMember]
+        public double price { get; set; }
+
+
     }
 }

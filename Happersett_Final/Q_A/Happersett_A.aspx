@@ -1,13 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Happersett_A.aspx.cs" Inherits="Happersett_Final.Happersett_A" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Happersett_A.aspx.cs" Inherits="Happersett_Final.Happersett_A" MasterPageFile="~/Happersett.Master" %>
 
-<!DOCTYPE html>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
         <div>
             <h1>Click a product name to get details</h1>
             <br />
@@ -25,7 +19,7 @@
             <asp:Label ID="Label2" runat="server" Text="number of items in cart : "></asp:Label>
             <asp:Label ID="Label1" runat="server"></asp:Label>
         </div>
-    </form>
+    
 
         <asp:SqlDataSource runat="server"
             ID="final"
@@ -33,5 +27,5 @@
             ConnectionString="<%$ ConnectionStrings:Final%>" >
         </asp:SqlDataSource>
 
-</body>
-</html>
+
+</asp:Content>

@@ -3,7 +3,9 @@
   <xs:import schemaLocation="http://localhost:51923/Happersett_product.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Happersett_PartB" />
   <xs:element name="ReturnProducts">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ReturnProductsResponse">

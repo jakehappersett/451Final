@@ -8,8 +8,11 @@
   <xs:element name="ArrayOfproduct" nillable="true" type="tns:ArrayOfproduct" />
   <xs:complexType name="product">
     <xs:sequence>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="id" type="xs:int" />
       <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="price" type="xs:double" />
+      <xs:element minOccurs="0" name="type" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="product" nillable="true" type="tns:product" />

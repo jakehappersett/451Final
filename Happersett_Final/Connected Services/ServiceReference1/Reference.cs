@@ -23,10 +23,19 @@ namespace Happersett_Final.ServiceReference1 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string descriptionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int idField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string nameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double priceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string typeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -35,6 +44,19 @@ namespace Happersett_Final.ServiceReference1 {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.descriptionField, value) != true)) {
+                    this.descriptionField = value;
+                    this.RaisePropertyChanged("description");
+                }
             }
         }
         
@@ -64,6 +86,32 @@ namespace Happersett_Final.ServiceReference1 {
             }
         }
         
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double price {
+            get {
+                return this.priceField;
+            }
+            set {
+                if ((this.priceField.Equals(value) != true)) {
+                    this.priceField = value;
+                    this.RaisePropertyChanged("price");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string type {
+            get {
+                return this.typeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.typeField, value) != true)) {
+                    this.typeField = value;
+                    this.RaisePropertyChanged("type");
+                }
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -79,10 +127,10 @@ namespace Happersett_Final.ServiceReference1 {
     public interface IHappersett_product {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHappersett_product/ReturnProducts", ReplyAction="http://tempuri.org/IHappersett_product/ReturnProductsResponse")]
-        Happersett_Final.ServiceReference1.product[] ReturnProducts();
+        Happersett_Final.ServiceReference1.product[] ReturnProducts(string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHappersett_product/ReturnProducts", ReplyAction="http://tempuri.org/IHappersett_product/ReturnProductsResponse")]
-        System.Threading.Tasks.Task<Happersett_Final.ServiceReference1.product[]> ReturnProductsAsync();
+        System.Threading.Tasks.Task<Happersett_Final.ServiceReference1.product[]> ReturnProductsAsync(string id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -112,12 +160,12 @@ namespace Happersett_Final.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public Happersett_Final.ServiceReference1.product[] ReturnProducts() {
-            return base.Channel.ReturnProducts();
+        public Happersett_Final.ServiceReference1.product[] ReturnProducts(string id) {
+            return base.Channel.ReturnProducts(id);
         }
         
-        public System.Threading.Tasks.Task<Happersett_Final.ServiceReference1.product[]> ReturnProductsAsync() {
-            return base.Channel.ReturnProductsAsync();
+        public System.Threading.Tasks.Task<Happersett_Final.ServiceReference1.product[]> ReturnProductsAsync(string id) {
+            return base.Channel.ReturnProductsAsync(id);
         }
     }
 }

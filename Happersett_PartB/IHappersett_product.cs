@@ -12,6 +12,6 @@ namespace Happersett_PartB
     public interface IHappersett_product
     {
         [OperationContract]
-        List<product> ReturnProducts();
+        List<product> ReturnProducts(string id);
     }
 }

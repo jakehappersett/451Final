@@ -18,7 +18,8 @@ namespace Happersett_Final
         protected void Button1_Click(object sender, EventArgs e)
         {
             ServiceReference1.Happersett_productClient client = new Happersett_productClient();
-            grbProduct.DataSource = client.ReturnProducts();
+            string variable = Text1.Value.ToString();
+            grbProduct.DataSource = client.ReturnProducts(variable);
             grbProduct.DataBind();
 
         }
